@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AERO-DYNAMICS // Next-Gen F1 3D Engineering</title>
+  
+  <!-- SEO & Metadata -->
+  <meta name="description" content="Explore the bleeding edge of Formula 1 motorsport engineering. Dive into Next-Gen F1 3D aerodynamics, carbon fiber monocoque chassis design, and precision hybrid powertrains.">
+  <meta name="keywords" content="F1 engineering, Formula 1, 3D aerodynamics, F1 chassis, carbon monocoque, Venturi tunnels, ground effect, hybrid powertrain, thermal efficiency, motorsports tech">
+  <meta name="author" content="RKSStudio">
+  <meta name="robots" content="index, follow">
+  
+  <!-- OpenGraph Metadata -->
+  <meta property="og:title" content="AERO-DYNAMICS // Next-Gen F1 3D Engineering">
+  <meta property="og:description" content="Immersive showcase of F1 aerodynamics, high-performance chassis design, and next-generation racing engineering. Built for ultra-high performance.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=1200&auto=format&fit=crop">
+  <meta property="og:type" content="website">
+  
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AERO-DYNAMICS // Next-Gen F1 3D Engineering">
+  <meta name="twitter:description" content="Discover the computational fluid dynamics and materials science behind modern Formula 1 cars.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;900&display=swap" rel="stylesheet">
+  
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Floating Sticky Header -->
+  <header class="glass-nav">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" id="nav-logo-link">
+        <span class="logo-red">F1</span><span class="logo-white">ENGINEERING</span>
+      </a>
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link" id="nav-link-hero">Aero</a>
+        <a href="#engineering" class="nav-link" id="nav-link-tech">Telemetry</a>
+        <a href="#engineering" class="nav-link" id="nav-link-chassis">Chassis</a>
+        <a href="#engineering" class="nav-link" id="nav-link-power">Powertrain</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#engineering" class="btn-nav" id="nav-btn-explore">
+          <span>Telemetry Portal</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section with Background Video -->
+    <section id="hero" class="hero-section">
+      <!-- Background Video Asset -->
+      <div class="video-container">
+        <video autoplay loop muted playsinline preload="auto" class="bg-video">
+          <source src="./assets/F1_car_video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay"></div>
+      </div>
+
+      <!-- Split Hero Layout -->
+      <div class="hero-content-wrapper">
+        <div class="hero-left">
+          <!-- Glassmorphic Container -->
+          <div class="glass-card hero-card" id="hero-interactive-card">
+            <div class="card-badge">
+              <span class="badge-dot"></span>
+              <span class="badge-text">2026 TECHNICAL REGULATION ARCHITECTURE</span>
+            </div>
+            <h1 class="hero-title">NEXT-GEN F1<br><span class="highlight-red">AERODYNAMICS</span></h1>
+            <p class="hero-subtitle">
+              Pioneering 3D chassis synthesis and computational fluid dynamics. Harnessing ground-effect Venturi tunnels and active drag reduction to redefine high-speed motorsport physics.
+            </p>
+            <div class="hero-cta-group">
+              <a href="#engineering" class="btn-primary" id="hero-primary-cta">
+                <span class="btn-text">Explore 3D Chassis</span>
+                <span class="btn-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-right">
+          <!-- Keeps the right side visually clear so the car in the background video is perfectly visible -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Pure CSS Hardware-Accelerated Infinite Sponsor Marquee -->
+    <section class="marquee-section" aria-label="Official Sponsors">
+      <div class="marquee-wrapper">
+        <div class="marquee-track">
+          <!-- Duplicate set 1 -->
+          <span class="marquee-item">ORACLE</span>
+          <span class="marquee-item spacer">•</span>
+          <span class="marquee-item">RED BULL RACING</span>
+          <span class="marquee-item spacer">•</span>
+          <span class="marquee-item">HONDA</span>
+          <span class="marquee-item spacer">•</span>
+          <span class="marquee-item">MOBIL 1</span>
+          <span class="marquee-item spacer">•</span>
+          <span class="marquee-item">PIRELLI</span>
+          <span class="marquee-item spacer">•</span>
+          
+          <!-- Duplicate set 2 (for seamless loop) -->
+          <span class="marquee-item">ORACLE</span>
+          <span class="marquee-item spacer">•</span>
+          <span class="marquee-item">RED BULL RACING</span>
+          <span class="marquee-item spacer">•</span>
+          <span class="marquee-item">HONDA</span>
+          <span class="marquee-item spacer">•</span>
+          <span class="marquee-item">MOBIL 1</span>
+          <span class="marquee-item spacer">•</span>
+          <span class="marquee-item">PIRELLI</span>
+          <span class="marquee-item spacer">•</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Editorial CSS Grid Content Section -->
+    <section id="engineering" class="content-section">
+      <div class="section-container">
+        
+        <!-- Premium Section Header -->
+        <div class="section-header">
+          <span class="section-tag font-outfit">ENGINEERING REPORT</span>
+          <h2 class="section-title font-outfit">COMPUTATIONAL PERFORMANCE</h2>
+          <p class="section-desc">
+            A comprehensive breakdown of next-generation physical limits, structural simulations, and active computational fluid dynamics (CFD) implemented at the apex of motorsport.
+          </p>
+        </div>
+
+        <!-- Premium Asymmetric CSS Grid Layout -->
+        <div class="editorial-grid">
+          
+          <!-- Grid Card 1: Aerodynamics (Spans 2 columns on desktop) -->
+          <div class="grid-card col-span-2 reveal-on-scroll" id="card-aero">
+            <div class="grid-card-inner">
+              <div class="card-icon-wrapper">
+                <!-- Aerodynamics Wind/Wing SVG -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF1801" stroke-width="2">
+                  <path d="M2 10h15a5 5 0 0 1 5 5v0a5 5 0 0 1-5 5H10"/>
+                  <path d="M2 14h10a3 3 0 0 1 3 3v0a3 3 0 0 1-3 3H6"/>
+                  <path d="M2 6h20"/>
+                </svg>
+              </div>
+              <div class="card-text-content">
+                <span class="card-number font-outfit">01 / DYNAMICS</span>
+                <h3 class="card-title font-outfit">Advanced CFD & Aerodynamics</h3>
+                <p class="card-body">
+                  Modern Formula 1 cars are designed as inverted wings, utilizing underfloor ground effect Venturi tunnels to generate massive downforce. By creating a extreme low-pressure zone beneath the carbon fiber floor, the car is suctioned directly onto the asphalt, resulting in cornering forces exceeding 5G.
+                </p>
+                <p class="card-body">
+                  Active Drag Reduction Systems (DRS) pivot the upper rear wing flap by 85mm on high-speed straights. This sheds critical aerodynamic drag, boosting top speeds by up to 12 km/h and transforming the vehicle from a high-downforce cornering machine into a low-drag supersonic bullet.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grid Card 2: 3D Chassis & Carbon Fiber Monocoque -->
+          <div class="grid-card reveal-on-scroll" id="card-chassis">
+            <div class="grid-card-inner">
+              <div class="card-icon-wrapper">
+                <!-- Chassis Structure/Cube SVG -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF1801" stroke-width="2">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                  <line x1="12" y1="22.08" x2="12" y2="12"/>
+                </svg>
+              </div>
+              <div class="card-text-content">
+                <span class="card-number font-outfit">02 / STRUCTURE</span>
+                <h3 class="card-title font-outfit">3D Chassis Engineering</h3>
+                <p class="card-body">
+                  The driver survival cell (monocoque) is cured in high-pressure autoclaves using military-grade pre-impregnated carbon fiber weaves interwoven with Kevlar layers.
+                </p>
+                <p class="card-body">
+                  This ultra-lightweight composite structure weighs under 100kg but survives crushing impact loads of over 250kN, ensuring structural integrity in extreme environments.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grid Card 3: Precision Powertrain -->
+          <div class="grid-card reveal-on-scroll" id="card-powertrain">
+            <div class="grid-card-inner">
+              <div class="card-icon-wrapper">
+                <!-- Hybrid Engine/Lightning SVG -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF1801" stroke-width="2">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                </svg>
+              </div>
+              <div class="card-text-content">
+                <span class="card-number font-outfit">03 / POWERTRAIN</span>
+                <h3 class="card-title font-outfit">Precision Hybrid Units</h3>
+                <p class="card-body">
+                  The power unit is a marvel of thermal efficiency, surpassing 50% efficiency (compared to ~30% in standard passenger cars).
+                </p>
+                <p class="card-body">
+                  Combining a highly optimized 1.6-liter turbocharged V6 internal combustion engine with dual electric motor generators—the MGU-K (kinetic) and MGU-H (heat)—it instantly deploys over 1,000 combined horsepower.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grid Card 4: Precision Telemetry (Spans 2 columns on desktop) -->
+          <div class="grid-card col-span-2 reveal-on-scroll" id="card-telemetry">
+            <div class="grid-card-inner">
+              <div class="card-icon-wrapper">
+                <!-- Telemetry Graph SVG -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF1801" stroke-width="2">
+                  <line x1="18" y1="20" x2="18" y2="10"/>
+                  <line x1="12" y1="20" x2="12" y2="4"/>
+                  <line x1="6" y1="20" x2="6" y2="14"/>
+                </svg>
+              </div>
+              <div class="card-text-content">
+                <span class="card-number font-outfit">04 / SENSORS</span>
+                <h3 class="card-title font-outfit">Real-Time Data Synthesis & Telemetry</h3>
+                <p class="card-body">
+                  Over 300 physical sensors integrated across the chassis and engine block stream multi-gigabit telemetry in real-time to the pit wall. Underfloor lasers map ride heights at 1,000 samples per second, compensating for tire compression, high-speed asphalt undulations, and aerodynamic downforce variations.
+                </p>
+                <p class="card-body">
+                  By merging real-time thermal tire imaging with predictive machine learning models, race strategists run thousands of micro-simulation scenarios per second, calculating optimal pit stop windows and predicting aerodynamic decay rates dynamically.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- New Alternate Video Showcase Section -->
+    <section id="showcase" class="showcase-section">
+      <div class="section-container">
+        
+        <!-- Showcase Block 1: Precision Engineering -->
+        <div class="showcase-block alt-layout reveal-on-scroll">
+          <div class="showcase-media">
+            <div class="video-wrapper">
+              <video muted playsinline preload="none" class="lazy-video" src="./assets/0524 (1)(1).mp4"></video>
+              <div class="video-overlay-subtle"></div>
+            </div>
+          </div>
+          <div class="showcase-info">
+            <div class="glass-card showcase-card">
+              <span class="card-number font-outfit">05 / STRUCTURE ASSEMBLY</span>
+              <h2 class="showcase-title font-outfit">Precision Engineering</h2>
+              <p class="showcase-text">
+                Witness the culmination of aerospace materials curing. The monocoque chassis assembly is optimized down to the micrometer, ensuring that the 3D-molded carbon weaves withstand extreme torsional stress while keeping weight distribution optimally balanced near the center of gravity.
+              </p>
+              <p class="showcase-text">
+                Every suspension component and internal dampening cylinder is integrated directly into the structural cell, maximizing space efficiency and enabling superior mechanical telemetry feedback on high-speed track sectors.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Showcase Block 2: Track Performance -->
+        <div class="showcase-block reveal-on-scroll">
+          <div class="showcase-info">
+            <div class="glass-card showcase-card">
+              <span class="card-number font-outfit">06 / TELEMETRY TEST</span>
+              <h2 class="showcase-title font-outfit">Unleashed on the Tarmac</h2>
+              <p class="showcase-text">
+                Unlocking sheer velocity. The vehicle's aerodynamic body panels work in unison to manipulate airflow at high speed, turning surrounding currents into raw downforce. Real-time DRS adjustments ensure maximum velocity on long straights while maintaining massive stability in aggressive corners.
+              </p>
+              <p class="showcase-text">
+                Tire temperature indicators and brake thermal maps track the immediate friction levels, feeding the engine control unit to deliver optimal power distribution under aggressive acceleration.
+              </p>
+            </div>
+          </div>
+          <div class="showcase-media">
+            <div class="video-wrapper">
+              <video muted playsinline preload="none" class="lazy-video" src="./assets/0524 (1).mp4"></video>
+              <div class="video-overlay-subtle"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Minimal Premium Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-red">F1</span><span class="logo-white">ENGINEERING</span>
+          <p class="brand-sub">The pinnacle of digital automotive engineering performance.</p>
+        </div>
+        <div class="footer-links-wrapper">
+          <div class="footer-column">
+            <h4 class="footer-col-title font-outfit">Pillars</h4>
+            <a href="#hero" class="footer-link" id="footer-aero">Aerodynamics</a>
+            <a href="#engineering" class="footer-link" id="footer-chassis">Composite Structure</a>
+            <a href="#engineering" class="footer-link" id="footer-hybrid">Hybrid Powertrains</a>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-col-title font-outfit">Telemetry</h4>
+            <a href="#" class="footer-link" id="footer-cfd">CFD Portals</a>
+            <a href="#" class="footer-link" id="footer-sim">Simulator Suite</a>
+            <a href="#" class="footer-link" id="footer-api">API Integration</a>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-col-title font-outfit">Legal</h4>
+            <a href="#" class="footer-link" id="footer-privacy">Privacy Policy</a>
+            <a href="#" class="footer-link" id="footer-terms">Terms of Service</a>
+            <a href="#" class="footer-link" id="footer-docs">Documentation</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 F1 Engineering. All rights reserved.</p>
+        <p class="author-credits">Made by <span class="credit-highlight">RKSStudio</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom Vanilla JS Script -->
+  <script src="./main.js"></script>
+</body>
+</html>
