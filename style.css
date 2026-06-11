@@ -1083,3 +1083,65 @@ body {
     justify-content: center;
   }
 }
+
+/* ==========================================================================
+   MOBILE BLOCKER OVERLAY (COMPUTERS ONLY)
+   ========================================================================== */
+#mobile-blocker {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-primary);
+  background-image: radial-gradient(circle at center, rgba(255, 24, 1, 0.08) 0%, transparent 60%);
+  z-index: 999999;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.blocker-content {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  padding: 50px 40px;
+  border-radius: 24px;
+  max-width: 420px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8), 0 0 40px rgba(255, 24, 1, 0.05);
+}
+
+.blocker-content h2 {
+  font-family: var(--font-outfit);
+  font-size: 1.7rem;
+  color: var(--text-white);
+  margin: 24px 0 16px;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+}
+
+.blocker-content p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Activate Blocker on Screens Smaller than standard Laptops */
+@media (max-width: 1024px) {
+  #mobile-blocker {
+    display: flex;
+  }
+  
+  /* Hide the rest of the website to save memory and completely block access */
+  .glass-nav, main, .footer {
+    display: none !important;
+  }
+  
+  /* Prevent scrolling entirely */
+  body {
+    overflow: hidden !important;
+  }
+}
